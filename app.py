@@ -67,7 +67,8 @@ st.markdown("AI-Powered Sales Forecasting using Random Forest")
 # ============================================================
 # SIDEBAR FILTERS
 # ============================================================
-
+st.sidebar.title("Name: Chiamaka Linda Okoli")
+st.sidebar.title("RegNo: 20055892 ")
 st.sidebar.title("Dashboard Filters")
 selected_year = st.sidebar.selectbox("Select Year", sorted(df["Year"].unique()))
 selected_city = st.sidebar.multiselect("Select City", df["City"].unique(), default=df["City"].unique())
