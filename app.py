@@ -61,7 +61,8 @@ df = pd.read_excel("konga_sales_2015_2025.xlsx")
 # TITLE
 # ============================================================
 
-st.title("📊 SALES PERFORMANCE ANALYSIS DASHBOARD")
+st.title("📊 CHIAMAKA LINDA OKOLI SALES PERFORMANCE ANALYSIS DASHBOARD")
+st.markdown("Dublin Business school MSc.Business Analysis")
 st.markdown("AI-Powered Sales Forecasting using Random Forest")
 
 # ============================================================
@@ -69,6 +70,7 @@ st.markdown("AI-Powered Sales Forecasting using Random Forest")
 # ============================================================
 st.sidebar.title("Name: Chiamaka Linda Okoli")
 st.sidebar.title("RegNo: 20055892 ")
+st.markdown("Dublin Business school MSc.Business Analysis")
 st.sidebar.title("Dashboard Filters")
 selected_year = st.sidebar.selectbox("Select Year", sorted(df["Year"].unique()))
 selected_city = st.sidebar.multiselect("Select City", df["City"].unique(), default=df["City"].unique())
